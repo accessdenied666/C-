@@ -1,0 +1,34 @@
+using System;
+
+namespace FirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int demeritPoints = 0;
+            Console.Write("Enter speed limit :");
+            int speedLimit = int.Parse(Console.ReadLine());
+            Console.Write("Enter car speed: ");
+            int carSpeed = int.Parse(Console.ReadLine());
+            if (carSpeed <= speedLimit)
+            {
+                Console.WriteLine("OK");
+            }
+            else
+            {
+                demeritPoints = (carSpeed - speedLimit) / 5;
+            }
+            if (demeritPoints <= 12)
+
+            {
+                Console.WriteLine("The penalty is : death and {0}", demeritPoints);
+
+            }
+            else
+            {
+                Console.WriteLine(" Licence suspended!");
+            }
+        }
+    }
+}
