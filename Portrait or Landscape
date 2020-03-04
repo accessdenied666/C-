@@ -1,0 +1,24 @@
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a number : "); 
+            int w = int.Parse(Console.ReadLine());
+            Console.Write("Enter a number : ");
+            int h = int.Parse(Console.ReadLine());
+            if (w > h)
+            {
+                Console.WriteLine("the picture is landscape");
+            }
+            else if (w > h )
+            {
+                Console.WriteLine("the picture is portrait");
+            }
+            else
+            {
+                Console.WriteLine("the picture is square");         
+            }
+
+        }
+    }
