@@ -1,0 +1,24 @@
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a number : "); 
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Enter a number : ");
+            int b = int.Parse(Console.ReadLine());
+            if (a > b)
+            {
+                Console.WriteLine("the higher number is {0}", a);
+            }
+            else if (b > a )
+            {
+                Console.WriteLine("the higher number is {0}", b);
+            }
+            else
+            {
+                Console.WriteLine("Both are equal");         
+            }
+
+        }
+    }
